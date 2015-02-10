@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Social Web and Mobile Web",
+    "packageVersion": "0.1.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "terjekrogstad",
+    "githubRepository": "IMT4006-lecture-06"
+  }
+}
