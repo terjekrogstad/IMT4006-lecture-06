@@ -50,8 +50,26 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // ---------------------------------------------
 
 // Theme template ------------------------------
-@import "../../bower_components/reveal.js/css/theme/template/theme";
+@import "../../bower_components/reveal.js/css/theme/source/moon";
 // ---------------------------------------------
 
 // See ../../bower_components/reveal.js/css/theme/README.md
 // for further explanations on how reveal.js themes work.
+
+
+//Overrides
+.backgrounds {
+    opacity: 0.1;
+}
+em {
+    color: #DDD;
+}
+input {
+    padding: 0 0.5em;
+margin: 0 2em;
+font-size: 0.8em;
+}
+
+.reveal table tr td {
+    vertical-align: top;
+}

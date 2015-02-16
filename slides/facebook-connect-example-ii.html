@@ -1,0 +1,21 @@
+<h2>Facebook Connect Example II</h2>
+
+<p>PHP SDK and Javascript SDK sharing session</p>
+<p>Client-side (Javascript) example:</p>
+<pre>
+    <code class="javascript">
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : 'YOUR_APP_ID', // App ID from the App Dashboard
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
+      status     : true, // check the login status upon init?
+      cookie     : true, // set sessions cookies to allow your server to access the session?
+      xfbml      : true  // parse XFBML tags on this page?
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+    
+  };
+    </code>
+</pre>

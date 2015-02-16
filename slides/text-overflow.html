@@ -1,0 +1,18 @@
+<h2>Text Overflow</h2>
+
+<ul>
+<li>Long Titles may be broken over several lines because of the small screen width</li>
+<li>A CSS trick will clean this up</li>
+</ul>
+
+<pre>
+    <code class="css">
+    #header h1 {
+      /* Other style settings */
+      max-width: 160px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    </code>
+</pre>
