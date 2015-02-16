@@ -1,0 +1,21 @@
+<h2>Touch Events</h2>
+
+<p>DOM elements supports touch events on mobile devices</p>
+<ul>
+    <li>onTouchStart</li>
+    <li>onTouchEnd</li>
+    <li>onTouchMove</li>
+    <li>...</li>
+</ul>
+
+<pre>
+    <code class="javascript">
+        element.addEventListener('touchstart',
+            function(e){
+                var touch = e.changedTouches[0];
+                //Log x position
+                console.log( touch.clientX );
+            }
+        );
+    </code>
+</pre>

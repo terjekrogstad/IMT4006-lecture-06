@@ -1,0 +1,26 @@
+<h2>OAuth Authorization Example</h2>
+
+<p>Twitter authorization</p>
+<pre>
+    Java Example
+    <code class="java">
+    Twitter twitter = new TwitterFactory().getInstance();
+    twitter.setOAuthConsumer("[consumer key]", "[consumer secret]");
+    RequestToken requestToken = twitter.getOAuthRequestToken();
+    AccessToken accessToken = null;
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    while (null == accessToken) {
+      String pin = br.readLine();
+      try{
+         if(pin.length() > 0){
+           accessToken = twitter.getOAuthAccessToken(requestToken, pin);
+         }else{
+           accessToken = twitter.getOAuthAccessToken();
+         }
+      } catch (TwitterException te) {
+         ...
+        }
+      }
+    }
+    </code>
+</pre>

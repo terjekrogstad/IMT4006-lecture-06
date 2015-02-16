@@ -1,0 +1,28 @@
+<h2>OpenSocial Example</h2>
+
+<p>Example: The OpenSocial Gadget below registers a listener with the data context to retrieve any context data included with the embedded experience:</p>
+<pre>
+    <code class="xml">
+  &#x3C;Module&#x3E;
+    &#x3C;ModulePrefs title=&#x22;Embedded Experiences Test&#x22; description=&#x22;Tests the embedded experiences APIs.&#x22;&#x3E;
+      &#x3C;Require feature=&#x22;embedded-experiences&#x22;&#x3E;&#x3C;/Require&#x3E;
+    &#x3C;/ModulePrefs&#x3E;
+    &#x3C;Content type=&#x22;html&#x22; view=&#x22;embedded&#x22;&#x3E;
+        &#x3C;![CDATA[
+          &#x3C;script type=&#x22;text/javascript&#x22;&#x3E;
+            function myCallback(key) {
+              var context = opensocial.data.getDataContext().getDataSet(key);
+              document.getElementById(&#x27;contextData&#x27;).innerHTML = gadgets.json.stringify(context);
+            }
+            function initData() {
+              opensocial.data.getDataContext().registerListener(
+                &#x27;org.opensocial.ee.context&#x27;, myCallback);
+            }
+            gadgets.util.registerOnLoadHandler(initData);
+        &#x3C;/script&#x3E;
+         &#x3C;div id=&#x22;contextData&#x22;&#x3E;&#x3C;/div&#x3E;
+    ]]&#x3E;
+    &#x3C;/Content&#x3E;
+  &#x3C;/Module&#x3E;
+    </code>
+</pre>
