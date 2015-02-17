@@ -7,7 +7,16 @@
 
 <pre>
     <code class="url">
-    data:img/png;base64,iVBOR...YII=
+    //Base64 encoded png
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
+
+    //Raw UTF8 text SVG (You may need to URL encode the string)
     data:image/svg+xml;utf8,&#x3C;svg ... &#x3E; ... &#x3C;/svg&#x3E;
     </code>
 </pre>
+
+<p class="fragment roll-in">
+    Can you see the inline data uri images?<br>
+    <img style="border: 0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
+    <span style="display:inline-block; width: 20px; height: 20px; background: url('data:image/svg+xml;utf8,%3Csvg%20id%3D%27mysvg%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20400%20400%27%3E%20%20%20%20%20%3Ccircle%20%20%20%20%20%20%20%20%20fill%3D%27%23000000%27%20%20%20%20%20%20%20%20%20stroke%3D%27%23000000%27%20%20%20%20%20%20%20%20%20stroke-width%3D%2710%27%20%20%20%20%20%20%20%20%20cx%3D%27105%27%20%20%20%20%20%20%20%20%20cy%3D%27105%27%20%20%20%20%20%20%20%20%20r%3D%2790%27%3E%3C/circle%3E%3C/svg%3E') no-repeat"/></span>
+</p>

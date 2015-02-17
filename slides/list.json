@@ -15,10 +15,8 @@
         "social-web-representation.html",
         "social-web-representation-example.html",
         "representation-vocabularies.html",
-        "identity-vocabularies.html",
-        "identity-vocabularies-example.html",
-        "access-and-authorization.html",
         "representation-and-identity.html",
+        "access-and-authorization.html",
         "authentication-openid.html",
         "openid-with-google-account.html",
         "authorization-oauth.html",
@@ -42,7 +40,6 @@
         "opensocial.html",
         "opensocial-gadgets.html",
         "opensocial-example.html",
-        "opensocial-example-ii.html",
         "opensocial-future.html"
     ],
     "the-mobile-web.html",
@@ -76,5 +73,6 @@
         "user-experience-ux.html",
         "user-experience-ii.html"
     ],
+    "workshop.html",
     "references.html"
 ]
