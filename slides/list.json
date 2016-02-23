@@ -15,19 +15,17 @@
         "social-web-representation.html",
         "social-web-representation-example.html",
         "representation-vocabularies.html",
-        "representation-and-identity.html",
         "access-and-authorization.html",
         "authentication-openid.html",
         "openid-with-google-account.html",
         "authorization-oauth.html",
-        "oauth-authentication-flow.html"
+        "oauth-authentication-flow.html",
+        "oauth-authorization-example.html"
     ],
     [
         "web-services-in-social-systems.html",
         "restful-services-in-social-systems.html",
         "soap-in-social-services.html",
-        "social-systems-and-platforms.html",
-        "oauth-authorization-example.html",
         "social-apps-using-facebook-connect.html",
         "facebook-connect-example.html",
         "facebook-connect-example-ii.html"
@@ -58,7 +56,6 @@
         "inline-images.html",
         "linking-to-phone-features.html",
         "css-media-queries.html",
-        "text-overflow.html",
         "platform-detection-in-javascript.html",
         "focus-and-scroll-management.html",
         "touch-events.html",
